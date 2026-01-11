@@ -1,7 +1,12 @@
 flask
 pillow
-opencv-python-headless
 realesrgan
+basicsr>=1.4.2
+setuptools
+wheel
+torch
+torchvision
 
 
 gunicorn
+
