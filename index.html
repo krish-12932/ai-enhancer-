@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4K AI Image Enhancer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Google Fonts for premium feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://pl28097546.effectivegatecpm.com/da/4f/70/da4f7026fbb3bbd9e869da55760f091e.js"></script>
+</head>
+
+<body>
+    <div class="language-toggle">
+        <button id="lang-btn" onclick="toggleLanguage()">हिन्दी</button>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1 id="title">4K AI Upscaler</h1>
+            <p id="subtitle">Convert your images to ultra-high resolution instantly.</p>
+        </header>
+
+        <main class="card">
+            <div id="upload-section" class="section active">
+                <div class="upload-area" id="drop-zone">
+                    <img src="https://cdn-icons-png.flaticon.com/512/126/126477.png" alt="Upload Icon"
+                        class="upload-icon">
+                    <p id="upload-text">Drag & Drop or Click to Upload</p>
+                    <input type="file" id="file-input" accept="image/png, image/jpeg" hidden>
+                </div>
+                <button id="upscale-btn" class="primary-btn" disabled>Upscale to 4K</button>
+            </div>
+
+            <div id="processing-section" class="section">
+                <div class="loader"></div>
+                <p id="processing-text">Enhancing your image with AI...</p>
+            </div>
+
+            <div id="ad-section" class="section">
+                <div class="ad-container">
+                    <!-- Placeholder for Ad -->
+                    <div class="ad-placeholder">
+                        <p>Sponsored Content</p>
+                        <div class="ad-content">Ad Space</div>
+                    </div>
+                </div>
+                <p id="timer-text">Your download will be ready in <span id="timer">5</span>s</p>
+            </div>
+
+            <div id="download-section" class="section">
+                <div class="success-icon">✓</div>
+                <h2 id="success-title">Processing Complete!</h2>
+                <p id="resolution-text" style="color: var(--text-light); margin-bottom: 24px; font-weight: 500;"></p>
+                <a id="download-link" href="#" class="primary-btn download-btn">Download 4K Image</a>
+                <button id="reset-btn" class="secondary-btn">Upscale Another</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
